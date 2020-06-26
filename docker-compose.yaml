@@ -1,0 +1,10 @@
+version: "3.4"
+services:
+  golang-book:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: golang-book
+    volumes:
+      - .:/home/app/golang-book/
+    tty: true
